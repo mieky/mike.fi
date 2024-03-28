@@ -1,0 +1,29 @@
+{
+  "name": "mike-fi-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "pnpm exec prettier -w . --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.2.2",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.2",
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^4.5.10",
+    "@astrojs/check": "^0.5.10",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.12"
+  }
+}
