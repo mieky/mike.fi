@@ -60,14 +60,14 @@ const { post } = Astro.props
     :global(#md ol) {
       @apply mt-4 list-decimal list-inside;
     }
+    :global(#md strong) {
+      @apply font-semibold;
+    }
 	  :global(#md ul) {
       @apply mt-4 list-disc list-inside ;
     }
     :global(#md blockquote) {
-      @apply text-zinc-450 mt-4 border-l-2 border-zinc-300 pl-4 text-base;
-    }
-    :global(#md a) {
-      @apply text-main underline hover:text-black;
+      @apply text-zinc-600 mt-4 border-l-2 border-zinc-300 pl-4 text-base;
     }
     :global(#md p code, #md ul code, #md ol code) {
       @apply text-base;

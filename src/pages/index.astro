@@ -42,10 +42,10 @@ const posts = await getPosts()
         {
           posts.map((post) => (
             <li>
-              <a class="underline" href={post.href}>
+              <a class="font-semibold text-slate-700" href={post.href}>
                 {post.title}
               </a>
-              <p class="text-slate-700">{post.description}</p>
+              <p class="text-zinc-450">{post.description}</p>
             </li>
           ))
         }
@@ -62,10 +62,10 @@ const posts = await getPosts()
         {
           inspiration.map((item) => (
             <li>
-              <a class="underline" href={item.url}>
+              <a class="font-semibold text-slate-700" href={item.url}>
                 {item.name}
               </a>
-              <p class="text-slate-500">{item.description}</p>
+              <p class="text-zinc-450">{item.description}</p>
             </li>
           ))
         }

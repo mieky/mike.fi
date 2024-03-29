@@ -4,10 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // main: "#6161ff",
-        // main: "#8599f7",
-        // main: "#a07ff8",
-        // main: "#ebc6ca",
         main: "#aa5561",
         zinc: {
           80: "#f7f7f7",
