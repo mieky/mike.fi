@@ -1,11 +1,11 @@
 ---
 title: Relaxed focus
 slug: relaxed-focus
-date: '2012-08-08'
+date: "2012-08-08"
 tags:
-- writing
-- essays
-- gtd
+  - writing
+  - essays
+  - gtd
 ---
 
 **TL;DR** – Stop trying too hard, and chances are you get stuff done.

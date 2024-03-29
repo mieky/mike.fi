@@ -1,0 +1,42 @@
+---
+import Layout from "@/components/Layout.astro"
+import { getPosts } from "@/utils/posts"
+import { formatDate } from "@/utils/format"
+
+import type { InferGetStaticPropsType } from "astro"
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+export const getStaticPaths = async () => {
+  const posts = await getPosts()
+  return posts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+      props: {
+        post,
+      },
+    }
+  })
+}
+
+const { post } = Astro.props
+---
+
+<Layout title={post.title} description={post.description}>
+  <article class="pb-8 md:pb-32">
+    <div class="py-8">
+      <a class="mb-6 text-slate-400 no-underline" href="..">&larr; Back</a>
+    </div>
+
+    <h1 class="text-3xl font-semibold">{post.title}</h1>
+    <p class="mt-2 text-lg text-slate-600">
+      {formatDate(post.date)}
+    </p>
+
+    <div class="my-10 leading-relaxed">
+      <post.content />
+    </div>
+  </article>
+</Layout>

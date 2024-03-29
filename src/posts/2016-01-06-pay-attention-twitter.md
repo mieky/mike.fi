@@ -1,20 +1,20 @@
 ---
 title: Pay attention, Twitter
-date: 2016-01-06
+date: "2016-01-06"
 tags:
-- hidden
-- rant
-- service design
-- twitter
+  - hidden
+  - rant
+  - service design
+  - twitter
 ---
 
 > I don't get Twitter... it's just people telling what they had for lunch.
 
 If you remember mentioning that to someone, I won't hold it against you. Twitter is a platform quite unlike any other, and that is both its strength and challenge. It has come a long way since its inception in 2006 (<a href="/images/2016-01-06-twitter-homepage-2006.png" alt="Twitter back in 2006" title="you'll never be bored again... right.">never get bored again, right?</a>), but lately its journey has been turbulent, to say the least.
 
-Twitter has been criticized about more things than I care to mention here: neglected official clients, hostility towards third party developers, increasing number of ads, breaking links with shorteners, etc. People are worried about Twitter ruining the core of their service in an attempt to become more like Facebook:  *they grow, so we need to grow, too!*
+Twitter has been criticized about more things than I care to mention here: neglected official clients, hostility towards third party developers, increasing number of ads, breaking links with shorteners, etc. People are worried about Twitter ruining the core of their service in an attempt to become more like Facebook: _they grow, so we need to grow, too!_
 
-Twitter's CEO Jack Dorsey weighed in tongue-in-cheek - *with an image embedded into his <a href="https://twitter.com/jack/status/684496529621557248">tweet</a>, take note!* - to convince people they still know what they're good for. Since it's been a long time since they gave any hints on their capabilities to improve, I want to propose some ideas of my own.
+Twitter's CEO Jack Dorsey weighed in tongue-in-cheek - _with an image embedded into his <a href="https://twitter.com/jack/status/684496529621557248">tweet</a>, take note!_ - to convince people they still know what they're good for. Since it's been a long time since they gave any hints on their capabilities to improve, I want to propose some ideas of my own.
 
 ### Nobody likes ads
 
@@ -50,7 +50,7 @@ Back to where we were. What would paying get one, then?
 - **Scheduling** or buffering tweets right from the client.
 - Native integration to bookmarking and **read-it-later** type services.
 - Ability to use Twitter with **3rd party clients**. Yes. Win-win! No more crippled interface for Tweetbot. It's power users who pay for their clients anyway.
-- **Mute and filter** tags and topics. No more noise such as the Swarm check-ins, *I just earned a badge!*, #mandatorygymtweet from otherwise reasonable people.
+- **Mute and filter** tags and topics. No more noise such as the Swarm check-ins, _I just earned a badge!_, #mandatorygymtweet from otherwise reasonable people.
 - Access to detailed tweet **statistics** (like everyone apparently now do <a href="https://analytics.twitter.com/">for free</a>), focus group information, follower optimization tools.
 
 It makes no sense for Twitter to make it difficult to get people to extract information from their service. Developers will want to get past clumsy embed codes. Twitter should open up a free-to-access API for extracting tweet data. Being too protective will only drive users to other services. Embrace users by embracing third-party developers!
@@ -69,7 +69,7 @@ Considering the size of the actual 140-character content of a single tweet, the 
 
 I'm pretty sure CEO Jack has a good idea of what Twitter is good at. From my point of view, Twitter already has what it takes to venture into new areas without losing their core.
 
-For example, Twitter's search at <a href="https://search.twitter.com/">search.twitter.com</a> is unbelievable. From the ludicrous amounts of data that Twitter stores each second, you only need to remember one keyword and you can find year-old tweets in an instant. *"I once tweeted this cool imagemagick script, let's see if I can <a href="https://twitter.com/search?q=mieky%20imagemagick&src=typd">find it</a>..."*
+For example, Twitter's search at <a href="https://search.twitter.com/">search.twitter.com</a> is unbelievable. From the ludicrous amounts of data that Twitter stores each second, you only need to remember one keyword and you can find year-old tweets in an instant. _"I once tweeted this cool imagemagick script, let's see if I can <a href="https://twitter.com/search?q=mieky%20imagemagick&src=typd">find it</a>..."_
 
 Twitter becomes most useful once you find people to follow who keep on bringing relevant content to your timeline. It could be easier to maintain and discover followees, though. Who are my friends following whom I retweet all the time? What are the keywords that are most likely to trigger likes from me? This information is all in there to be found and put into use.
 
@@ -79,4 +79,4 @@ I believe Twitter already has many of the building blocks in place. They should 
 
 Related:
 
-* <a href="http://www.vox.com/2016/1/5/10719476/twitter-10000-character">Vox: Twitter is not broken, and they should stop trying to fix it</a>
+- <a href="http://www.vox.com/2016/1/5/10719476/twitter-10000-character">Vox: Twitter is not broken, and they should stop trying to fix it</a>

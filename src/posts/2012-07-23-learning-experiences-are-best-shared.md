@@ -2,7 +2,7 @@
 title: Learning experiences are best shared
 slug: learning-experiences-are-best-shared
 description:
-date: '2012-07-23'
+date: "2012-07-23"
 ---
 
 This blog post may look short, but I rewrote it ten times over.

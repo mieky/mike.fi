@@ -1,8 +1,9 @@
 ---
 title: Software is beautiful
 slug: software-is-beautiful
-date: '2012-10-14'
+date: "2012-10-14"
 ---
+
 I had a fantastic time at <a href="http://www.clojutre.org/">ClojuTRE</a> and <a href="http://www.tamperegoesagile.fi/">Tampere Goes Agile</a> over the weekend. What’s more, as of late I have been hugely inspired by people and the cool things they do. As a result, when the hungover me decided to update the description on his LinkedIn profile page, things started happening, I got all poetic, and ended up with a mini-essay on the beauty of software craftsmanship. It’s now in <a href="https://github.com/mieky/beautiful-software">GitHub</a>, but let me just quote the whole thing in here:
 
 <blockquote>

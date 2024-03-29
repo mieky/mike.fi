@@ -1,68 +1,71 @@
-import type { MarkdownInstance } from "astro";
+import type { MarkdownInstance } from "astro"
+
+interface Post {
+  title: string
+  slug: string
+  href: string
+  content: MarkdownInstance<any>["Content"]
+  description: string | null
+  date: Date
+  tags: string[]
+}
 
 const postImports: Record<string, ResolveMarkdownImport> = import.meta.glob(
-  "../posts/*.md"
-);
+  "../posts/*.md",
+)
 
-console.log({ postImports });
-
+// From https://byby.dev/js-slugify-string
 function slugify(title: string) {
-  return title.toLowerCase().replaceAll(" ", "-");
+  return title
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9 -]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
 }
 
 type ResolveMarkdownImport = () => Promise<
   MarkdownInstance<{
-    title: string;
-    slug: string;
-    description: string;
-    date: string;
+    title: string
+    slug: string
+    description: string
+    date: string
+    tags: string[]
   }>
->;
+>
 
 async function resolveMarkdownImportEntry([relativePath, resolveImport]: [
   string,
   ResolveMarkdownImport,
 ]): Promise<Post> {
-  const fileName = relativePath.split("/").at(-1) ?? null;
+  const fileName = relativePath.split("/").at(-1) ?? null
   if (!fileName) {
-    throw new Error(`Failed to extract file name from path: ${relativePath}`);
+    throw new Error(`Failed to extract file name from path: ${relativePath}`)
   }
 
-  const [postId] = fileName.split(".").slice(0, -1);
-  const markdown = await resolveImport();
+  const markdown = await resolveImport()
+  const slug = markdown.frontmatter.slug ?? slugify(markdown.frontmatter.title)
 
-  console.log("resolved markdown", postId);
+  const tags = markdown.frontmatter.tags
 
   return {
-    postId,
-    Content: markdown.Content,
-    metaData: {
-      title: markdown.frontmatter.title,
-      slug: markdown.frontmatter.slug ?? slugify(markdown.frontmatter.title),
-      description: markdown.frontmatter.description,
-      date: new Date(markdown.frontmatter.date.replaceAll("-", "/")),
-    },
-    href: ["blog", postId].join("/"),
-  } as const;
+    title: markdown.frontmatter.title,
+    slug,
+    href: `/${slug}`,
+    content: markdown.Content,
+    description: markdown.frontmatter.description,
+    date: new Date(markdown.frontmatter.date.replaceAll("-", "/")),
+    tags,
+  } as const
 }
 
 export async function getPosts() {
   const posts = await Promise.all(
-    Object.entries(postImports).map(resolveMarkdownImportEntry)
-  );
+    Object.entries(postImports).map(resolveMarkdownImportEntry),
+  )
   return posts.sort((a, b) => {
-    return b.metaData.date.getTime() - a.metaData.date.getTime();
-  });
-}
-
-interface Post {
-  postId: string;
-  Content: MarkdownInstance<any>["Content"];
-  metaData: {
-    title: string;
-    slug: string;
-    description: string | null;
-    date: Date;
-  };
-  href: string;
+    return b.date.getTime() - a.date.getTime()
+  })
 }

@@ -1,11 +1,11 @@
 ---
 title: My favorite books of 2019
-description: These are my favorite books I read in 2019.
-date: '2019-12-31'
+description: The best books I read in 2019.
+date: "2019-12-31"
 tags:
-- books
-- goodreads
-- favorites
+  - books
+  - goodreads
+  - favorites
 ---
 
 This past year I read (and listened to!) more books than ever. Here are my favorites:
@@ -16,7 +16,7 @@ The host of The Daily Show writes about his childhood in South Africa during Apa
 
 #### David Epstein - Range
 
-Reading Range felt empowering, the same way I remember Dan Pink's Drive having felt back a few years ago. Its premise is that generalists are often able to make use of their past experiences in new domains, and  it's never too late to acquire new skills. It's packed with interesting tales and anecdotes of both specialists and generalists, including late bloomers. I want to believe!
+Reading Range felt empowering, the same way I remember Dan Pink's Drive having felt back a few years ago. Its premise is that generalists are often able to make use of their past experiences in new domains, and it's never too late to acquire new skills. It's packed with interesting tales and anecdotes of both specialists and generalists, including late bloomers. I want to believe!
 
 #### John Scalzi - Old Man's War
 

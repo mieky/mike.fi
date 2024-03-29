@@ -1,10 +1,10 @@
 ---
 title: Don't be afraid
-date: 2013-06-01
+date: "2013-06-01"
 tags:
-- self-reflection
-- beyondtellerrand
-- learning
+  - self-reflection
+  - beyondtellerrand
+  - learning
 ---
 
 It’s amazing how much inspiration you can get just by visiting an event and watching people present their learnings. If there’s one special event to inspire people and make them respect their trade, it must be <a href="http://beyondtellerrand.com">Beyond Tellerrand</a>.
