@@ -49,6 +49,7 @@ async function resolveMarkdownImportEntry([relativePath, resolveImport]: [
   const slug = markdown.frontmatter.slug ?? slugify(markdown.frontmatter.title)
 
   const tags = markdown.frontmatter.tags
+  console.log({ tags })
 
   return {
     title: markdown.frontmatter.title,
@@ -65,7 +66,9 @@ export async function getPosts() {
   const posts = await Promise.all(
     Object.entries(postImports).map(resolveMarkdownImportEntry),
   )
-  return posts.sort((a, b) => {
-    return b.date.getTime() - a.date.getTime()
-  })
+  return posts
+    .filter((post) => !post.tags?.includes("hidden"))
+    .sort((a, b) => {
+      return b.date.getTime() - a.date.getTime()
+    })
 }
