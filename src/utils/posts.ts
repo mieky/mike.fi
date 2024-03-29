@@ -10,11 +10,8 @@ interface Post {
   tags: string[]
 }
 
-const postImports: Record<string, ResolveMarkdownImport> = import.meta.glob(
-  "../posts/*.md",
-)
-
-console.log({ postImports })
+const postImports: Record<string, () => Promise<ResolveMarkdownImport | any>> =
+  import.meta.glob("../posts/*.md")
 
 // From https://byby.dev/js-slugify-string
 function slugify(title: string) {
