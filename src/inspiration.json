@@ -1,7 +1,12 @@
 [
   {
-    "name": "Pilcrow",
-    "description": "Pilcrow's website",
+    "name": "Pilcrow's website",
+    "description": "Pilcrow's lovely high-quality minimalism inspired me to refresh my own site.",
     "url": "https://pilcrowonpaper.com"
+  },
+  {
+    "name": "Bartosz Ciechanowski",
+    "description": "Bartosz creates amazing interactive visualizations that show how physical concepts should be taught in school.",
+    "url": "https://ciechanow.ski/"
   }
 ]

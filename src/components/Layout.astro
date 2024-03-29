@@ -1,29 +1,54 @@
 ---
 ---
 <html lang="en">
-<head></head>
-<body>
-  <header>
-    well hello
-  </header>
-  <main>
+  <head>
+      <meta charset="utf-8">
+      <title>Mike Arvela</title>
+
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="Hi! I'm Mike, a web developer from Tampere, Finland." />
+
+      <meta name="twitter:site" content="Mike" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Mike Arvela" />
+      <meta name="twitter:description" content="Hi! I'm Mike, a web developer from Tampere, Finland." />
+
+      <meta property="og:site_name" content="Mike" />
+      <meta property="og:image" content="https://avatars.githubusercontent.com/u/299644?v=4?s=400" />
+      <meta property="og:image:alt" content="Mike" />
+      <meta property="og:type" content="profile" />
+      <meta property="og:title" content="Mike Arvela" />
+      <meta property="og:description" content="Hi! I'm Mike, a web developer from Tampere, Finland." />
+
+      <meta property="og:url" content="https://mike.fi" />
+
+      <link rel="apple-touch-icon" href="/favicon.png">
+      <link rel="icon" type="image/png" href="/favicon.png" sizes="360x360">
+  </head>
+  <body class="mx-auto max-w-2xl pt-12 px-4">
     <slot />
-  </main>
-</body>
-<style>
-		html {
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-				sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-		}
-		code {
-			font-family:
-				ui-monospace,
-				SFMono-Regular,
-				SF Mono,
-				Menlo,
-				Consolas,
-				Liberation Mono,
-				monospace;
-		}
-</style>
+  </body>
+  <style>
+      html {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+          sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+      code {
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          SF Mono,
+          Menlo,
+          Consolas,
+          Liberation Mono,
+          monospace;
+      }
+  </style>
+  <style lang="postcss">
+    :global(p) {
+      @apply mb-4;
+    }
+    :global(a) {
+    }
+  </style>
 </html>

@@ -1,9 +1,56 @@
 ---
 import Layout from "@/components/Layout.astro"
 import inspiration from "../inspiration.json"
+import { getPosts } from "@/utils/posts";
+
+const posts = await getPosts();
 
 ---
 
 <Layout>
-  i like content
+  <header>
+    <div class="flex justify-between">
+      <h1 class="text-2xl font-bold">Hi, I'm Mike!</h1>
+      <section class="w-fit">
+        <a href="#">Link</a>
+      </section>
+    </div>
+  </header>
+
+  <main class="pb-32 pt-8">
+    <p>I’m Mike Arvela, a web developer and family guy. I live in Tampere, a mighty fine town in Northern Europe.</p>
+
+    <p>I enjoy working with people and technology. I’m thrilled by smooth web experiences and am a fan of life-long learning.</p>
+
+    <p>You can find me on Twitter, GitHub, LinkedIn and Goodreads.</p>
+
+    <section class="py-4">
+      <h2 class="text-xl font-semibold mb-4">Posts</h2>
+      <ul>
+      {posts.map(post => (
+        <li>
+          <a class="underline">{post.metaData.title}</a>
+          <p class="text-slate-700">{post.metaData.description}</p>
+        </li>
+      ))}
+      </ul>
+    </section>
+
+    <section class="py-4">
+      <h2 class="text-xl font-semibold mb-4">Inspiration</h2>
+      <p>
+        In a time where there's an abundance of fluff and little focus to the really good stuff, I feel like sharing some of the things I really like.
+      </p>
+      <ul>
+        {inspiration.map(item => (
+          <li>
+            <a class="underline" href={item.url}>
+              {item.name}
+            </a>
+            <p class="text-slate-700">{item.description}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </main>
 </Layout>
