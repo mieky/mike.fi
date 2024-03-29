@@ -2,6 +2,7 @@
 import Layout from "@/components/Layout.astro"
 import inspiration from "../inspiration.json"
 import { getPosts } from "@/utils/posts"
+import { formatMonth } from "@/utils/format"
 
 const posts = await getPosts()
 ---
@@ -40,10 +41,13 @@ const posts = await getPosts()
       <ul>
         {
           posts.map((post) => (
-            <li>
+            <li class="group">
               <a class="font-semibold text-slate-700" href={post.href}>
                 {post.title}
               </a>
+              <div class="inline-block transform pl-2 text-xs font-semibold tracking-tight text-zinc-400 opacity-0 transition duration-200 ease-in group-hover:opacity-100">
+                {formatMonth(post.date)}
+              </div>
               <div class="mb-4 text-zinc-450">{post.description}</div>
             </li>
           ))

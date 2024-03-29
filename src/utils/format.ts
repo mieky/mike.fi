@@ -3,3 +3,5 @@ const formatter = new Intl.DateTimeFormat("en-US", {
 })
 
 export const formatDate = (date: Date) => formatter.format(date)
+
+export const formatMonth = (date: Date) => date.toISOString().slice(0, 7)

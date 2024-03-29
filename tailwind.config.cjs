@@ -11,6 +11,7 @@ export default {
         },
       },
       fontSize: {
+        xs: "0.7rem",
         "code-sm": "0.825rem",
         "code-base": "0.925rem",
         "code-lg": "1.12rem",
