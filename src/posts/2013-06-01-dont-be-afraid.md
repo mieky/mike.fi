@@ -1,5 +1,6 @@
 ---
 title: Don't be afraid
+description: Vulnerable human beings doing amazing things.
 date: "2013-06-01"
 tags:
   - self-reflection

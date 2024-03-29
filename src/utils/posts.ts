@@ -14,6 +14,8 @@ const postImports: Record<string, ResolveMarkdownImport> = import.meta.glob(
   "../posts/*.md",
 )
 
+console.log({ postImports })
+
 // From https://byby.dev/js-slugify-string
 function slugify(title: string) {
   return title

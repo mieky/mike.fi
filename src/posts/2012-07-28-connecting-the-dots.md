@@ -1,6 +1,6 @@
 ---
 title: Connecting the dots
-slug: connecting-the-dots
+description: Inspired by Everything Is a Remix.
 date: "2012-07-28"
 tags:
   - learning

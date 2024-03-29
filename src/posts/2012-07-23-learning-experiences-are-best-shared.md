@@ -1,7 +1,6 @@
 ---
 title: Learning experiences are best shared
-slug: learning-experiences-are-best-shared
-description:
+description: Making mistakes is human, but admitting to them requires so much courage.
 date: "2012-07-23"
 ---
 

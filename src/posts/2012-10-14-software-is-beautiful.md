@@ -1,6 +1,6 @@
 ---
 title: Software is beautiful
-slug: software-is-beautiful
+description: A mini-essay on why I love the field.
 date: "2012-10-14"
 ---
 
