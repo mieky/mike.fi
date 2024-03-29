@@ -35,8 +35,74 @@ const { post } = Astro.props
       {formatDate(post.date)}
     </p>
 
-    <div class="my-10 leading-relaxed">
+    <div id="md" class="my-10 leading-relaxed">
       <post.content />
     </div>
   </article>
 </Layout>
+
+<style lang="postcss">
+    :global(#md h2) {
+      @apply mt-16 text-3xl font-semibold;
+    }
+    :global(#md h3) {
+      @apply mt-8 text-2xl font-medium;
+    }
+    :global(#md h4) {
+      @apply mt-6 text-xl font-medium;
+    }
+	  :global(#md h5) {
+      @apply mt-4 text-lg font-medium;
+    }
+    :global(#md > p) {
+      @apply mt-4 ;
+    }
+    :global(#md ol) {
+      @apply mt-4 list-decimal list-inside;
+    }
+	  :global(#md ul) {
+      @apply mt-4 list-disc list-inside ;
+    }
+    :global(#md blockquote) {
+      @apply text-zinc-450 mt-4 border-l-2 border-zinc-300 pl-4 text-base;
+    }
+    :global(#md a) {
+      @apply text-main underline hover:text-black;
+    }
+    :global(#md p code, #md ul code, #md ol code) {
+      @apply text-base;
+	  }
+    :global(#md table code) {
+      @apply text-sm;
+    }
+    :global(#md .astro-code) {
+      @apply !bg-zinc-80 my-2 overflow-scroll rounded-lg px-4 py-3 !leading-tight;
+        scrollbar-width: none;
+    }
+    :global(#md .astro-code span) {
+      @apply !text-code-sm;
+    }
+    :global(#md pre::-webkit-scrollbar) {
+        display: none;
+    }
+    :global(#md table) {
+      @apply mt-6 mb-2 w-full table-auto border-collapse text-left text-sm;
+    }
+    :global(#md .table-wrapper) {
+      @apply w-full overflow-auto whitespace-nowrap;
+    }
+    :global(#md td) {
+      @apply border-b border-zinc-200 py-1.5 px-1;
+    }
+    :global(#md table th) {
+      @apply text-xs font-medium py-1.5 px-1 border-b border-zinc-400;
+    }
+    :global(#md p > code) {
+      @apply text-sm;
+    }
+    :root {
+      --astro-code-color-background: rgb(246, 246, 246);
+      --astro-code-token-string-expression: rgb(97, 97 ,255);
+      --astro-code-token-comment: rgb(157, 157, 157);
+    }
+</style>
