@@ -44,7 +44,7 @@ const posts = await getPosts()
               <a class="font-semibold text-slate-700" href={post.href}>
                 {post.title}
               </a>
-              <div class="text-zinc-450 mb-4">{post.description}</div>
+              <div class="mb-4 text-zinc-450">{post.description}</div>
             </li>
           ))
         }
@@ -64,7 +64,7 @@ const posts = await getPosts()
               <a class="font-semibold text-slate-700" href={item.url}>
                 {item.name}
               </a>
-              <div class="text-zinc-450 mb-4">{item.description}</div>
+              <div class="mb-4 text-zinc-450">{item.description}</div>
             </li>
           ))
         }
@@ -74,7 +74,7 @@ const posts = await getPosts()
 
   <footer>
     <p class="pb-8 text-sm text-slate-600">
-      ✌🏻 Site built with Astro and hosted on Cloudflare pages. Source in GitHub.
+      ✌🏻 Site built with Astro and hosted on GitHub Pages. Source in GitHub.
     </p>
   </footer>
 </Layout>
