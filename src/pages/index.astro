@@ -8,7 +8,7 @@ const posts = await getPosts()
 
 <Layout>
   <header>
-    <div class="inline-block w-24 py-8">
+    <div class="inline-block w-24 py-12">
       <img class="rounded-full" src="/mike.jpeg" alt="Mike" />
     </div>
     <div class="flex justify-between">
@@ -17,14 +17,13 @@ const posts = await getPosts()
   </header>
 
   <main class="pb-8 pt-6 md:pb-32">
-    <p>
-      I’m Mike Arvela, a web developer and family guy. I live in Tampere, a
-      mighty fine town in Northern Europe.
-    </p>
+    <p>I’m a software developer from Tampere, a nice little town in Finland.</p>
 
     <p>
-      I enjoy working with people and technology. I’m thrilled by smooth web
-      experiences and am a fan of life-long learning.
+      I've been creating things on the web for fun as well as for living for the
+      last 20 years, yet in many ways I feel I'm only getting started. I tend to
+      get inspired by people, especially when they're kind and creative. Always
+      up for new friends and ideas!
     </p>
 
     <p>
@@ -36,7 +35,7 @@ const posts = await getPosts()
       >.
     </p>
 
-    <section class="py-4">
+    <section class="py-6">
       <h2 class="mb-4 text-2xl font-semibold">Posts</h2>
       <ul>
         {
@@ -45,17 +44,17 @@ const posts = await getPosts()
               <a class="font-semibold text-slate-700" href={post.href}>
                 {post.title}
               </a>
-              <p class="text-zinc-450">{post.description}</p>
+              <div class="text-zinc-450 mb-4">{post.description}</div>
             </li>
           ))
         }
       </ul>
     </section>
 
-    <section class="py-4">
+    <section class="py-6">
       <h2 class="mb-4 text-2xl font-semibold">Inspiration</h2>
       <p>
-        In a time where there's an abundance of fluff and little focus to the
+        In a time where there's an abundance of fluff and little focus on the
         really good stuff, I feel like sharing some of the things I really like.
       </p>
       <ul>
@@ -65,7 +64,7 @@ const posts = await getPosts()
               <a class="font-semibold text-slate-700" href={item.url}>
                 {item.name}
               </a>
-              <p class="text-zinc-450">{item.description}</p>
+              <div class="text-zinc-450 mb-4">{item.description}</div>
             </li>
           ))
         }
