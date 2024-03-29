@@ -2,6 +2,9 @@
 title: Learning experiences are best shared
 description: Making mistakes is human, but admitting to them requires so much courage.
 date: "2012-07-23"
+tags:
+  - meta
+  - vulnerability
 ---
 
 This blog post may look short, but I rewrote it ten times over.

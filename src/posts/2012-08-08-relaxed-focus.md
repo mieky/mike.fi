@@ -4,7 +4,8 @@ description: Stop trying too hard, and chances are you get stuff done.
 date: "2012-08-08"
 tags:
   - writing
-  - essays
+  - essay
+  - inspiration
   - gtd
 ---
 

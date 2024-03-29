@@ -31,9 +31,23 @@ const { post } = Astro.props
     </div>
 
     <h1 class="text-3xl font-semibold">{post.title}</h1>
-    <p class="mt-2 text-lg text-slate-600">
-      {formatDate(post.date)}
-    </p>
+
+    <div class="justify-left flex flex-col md:flex-row md:items-center">
+      <p class="my-2 self-baseline text-lg leading-8 text-slate-600">
+        {formatDate(post.date)}
+      </p>
+      {
+        post.tags && (
+          <div class="flex cursor-default gap-1 md:pl-4">
+            {post.tags.map((tag) => (
+              <div class="inline-block rounded-md bg-zinc-200 px-2 py-[2px] text-xs font-semibold uppercase tracking-tight text-zinc-450">
+                {tag}
+              </div>
+            ))}
+          </div>
+        )
+      }
+    </div>
 
     <div id="md" class="my-10 leading-relaxed">
       <post.content />

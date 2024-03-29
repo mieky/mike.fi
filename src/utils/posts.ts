@@ -46,7 +46,7 @@ async function resolveMarkdownImportEntry([relativePath, resolveImport]: [
 
   const markdown = await resolveImport()
   const slug = markdown.frontmatter.slug ?? slugify(markdown.frontmatter.title)
-  const tags = markdown.frontmatter.tags
+  const tags = markdown.frontmatter.tags?.sort() || []
 
   return {
     title: markdown.frontmatter.title,
