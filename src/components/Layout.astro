@@ -62,6 +62,12 @@
     }
   </style>
   <style lang="postcss">
+    :global(body) {
+      --text-main: #282832;
+      --text-amp: #aa5561;
+
+      color: var(--text-main);
+    }
     :global(h1, h2) {
       @apply text-slate-800;
     }
@@ -69,7 +75,7 @@
       @apply mb-4;
     }
     :global(a) {
-      @apply hover:underline underline underline-offset-2 text-slate-700 hover:text-main
+      @apply hover:underline underline underline-offset-2 text-slate-700 hover:text-amp
     }
   </style>
 </html>

@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: "#aa5561",
+        main: "var(--text-main)",
+        amp: "var(--text-amp)",
         zinc: {
           80: "#f7f7f7",
           450: "#85858f",
