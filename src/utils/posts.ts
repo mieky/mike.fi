@@ -34,7 +34,6 @@ type ResolveMarkdownImport = () => Promise<
     tags: string[]
   }>
 >
-
 async function resolveMarkdownImportEntry([relativePath, resolveImport]: [
   string,
   ResolveMarkdownImport,

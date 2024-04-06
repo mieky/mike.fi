@@ -13,21 +13,23 @@ const posts = await getPosts()
       <img class="rounded-full" src="/mike.jpeg" alt="Mike" />
     </div>
     <div class="flex justify-between">
-      <h1 class="text-3xl font-semibold">Hi, I'm Mike!</h1>
+      <h1 class="text-3xl font-semibold text-slate-700">Hi, I'm Mike!</h1>
     </div>
   </header>
 
   <main class="pb-8 pt-6 md:pb-32">
-    <p>I’m a software developer from Tampere, a nice little town in Finland.</p>
+    <p class="mb-4">
+      I’m a software developer from Tampere, a nice little town in Finland.
+    </p>
 
-    <p>
+    <p class="mb-4">
       I've been creating things on the web for fun and food for the last 20
       years, yet in many ways I feel I'm only getting started. I tend to get
       inspired by people, especially when they're kind and creative. Always up
       for new friends and ideas!
     </p>
 
-    <p>
+    <p class="mb-4">
       You can find me on <a href="https://twitter.com/mieky">Twitter</a>,
       <a href="https://github.com/mieky">GitHub</a>, <a
         href="https://www.linkedin.com/in/arvela">LinkedIn</a
@@ -37,12 +39,15 @@ const posts = await getPosts()
     </p>
 
     <section class="py-6">
-      <h2 class="mb-4 text-2xl font-semibold">Posts</h2>
+      <h2 class="text-7800 mb-4 text-2xl font-semibold">Posts</h2>
       <ul>
         {
           posts.map((post) => (
             <li class="group">
-              <a class="font-semibold text-slate-700" href={post.href}>
+              <a
+                class="inline-block font-semibold text-slate-700"
+                href={post.href}
+              >
                 {post.title}
               </a>
               <div class="inline-block transform pl-2 text-xs font-semibold tracking-tight text-zinc-400 opacity-0 transition duration-100 ease-in group-hover:opacity-100">
@@ -56,8 +61,8 @@ const posts = await getPosts()
     </section>
 
     <section class="py-6">
-      <h2 class="mb-4 text-2xl font-semibold">Inspiration</h2>
-      <p>
+      <h2 class="mb-4 text-2xl font-semibold text-slate-700">Inspiration</h2>
+      <p class="mb-4">
         In a time where there's an abundance of fluff and little focus on the
         really good stuff, I feel like sharing some of the things I really like.
       </p>
@@ -77,7 +82,7 @@ const posts = await getPosts()
   </main>
 
   <footer>
-    <p class="pb-8 text-sm text-slate-600">
+    <p class="pb-8 text-sm text-zinc-450">
       ✌🏻 Site built with <a href="https://astro.build/">Astro</a> and hosted on <a
         href="https://github.com/mieky/mike.fi">GitHub</a
       >.

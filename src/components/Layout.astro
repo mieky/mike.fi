@@ -40,7 +40,7 @@
     <link rel="icon" type="image/png" href="/favicon.png" sizes="360x360" />
   </head>
 
-  <body class="mx-auto max-w-2xl px-4 md:pt-12">
+  <body class="mx-auto max-w-2xl px-4 text-slate-700 md:pt-12">
     <slot />
   </body>
 
@@ -62,20 +62,9 @@
     }
   </style>
   <style lang="postcss">
-    :global(body) {
-      --text-main: #282832;
-      --text-amp: #aa5561;
-
-      color: var(--text-main);
-    }
-    :global(h1, h2) {
-      @apply text-slate-800;
-    }
-    :global(p) {
-      @apply mb-4;
-    }
     :global(a) {
-      @apply hover:underline underline underline-offset-2 text-slate-700 hover:text-amp
+      /* Not too shabby? @apply hover:underline underline underline-offset-2 font-medium hover:text-pink-700 text-sky-700; */
+      @apply hover:underline underline underline-offset-2 font-medium hover:text-pink-700;
     }
   </style>
 </html>
