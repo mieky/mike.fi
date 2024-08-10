@@ -11,9 +11,9 @@ tags:
 
 There's something deeply satisfying about being able to control your physical environment by typing on the keyboard.
 
-I've only recently installed [Home Assistant](https://www.home-assistant.io/) to set up some basic temperature sensors and smart lights at home. While I can see why people are excited about it, I think I've found myself a use case that excites me even more than the cool dashboards and widgets. Spending a lot of my time on a command line (not to mention my home office), I noticed there's a certain allure to talking to appliances **from the command line**.
+I've only recently installed [Home Assistant](https://www.home-assistant.io/) to set up some basic temperature sensors and smart lights at home. While I can see why people are excited about it, I think I've found myself a use case that excites me even more than the cool dashboards and widgets. Spending a lot of my time on a command line (not to mention my home office), I noticed there's a certain allure to talking to appliances from the command line.
 
-So far I've built three shell commands that work simply by talking to various devices via the Home Assistant REST API in my local network. It's all about either requesting states for various known devices and then filtering the JSON output, or updating them with a HTTP POST request.
+So far I've built **three shell commands** that work simply by talking to various devices via the Home Assistant REST API in my local network. It's all about either requesting states for various known devices and then filtering the JSON output, or updating them with a HTTP POST request.
 
 ### 1: fan on|off
 
