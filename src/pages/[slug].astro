@@ -24,7 +24,7 @@ export const getStaticPaths = async () => {
 const { post } = Astro.props
 ---
 
-<Layout title={post.title} description={post.description}>
+<Layout title={post.title} description={post.description || ''}>
   <article class="pb-8 md:pb-32">
     <div class="py-8">
       <a class="mb-6 font-normal text-zinc-450 no-underline" href=".."

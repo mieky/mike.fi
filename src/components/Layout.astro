@@ -1,40 +1,36 @@
 ---
-
+interface Props {
+	title: string;
+	description: string;
+}
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Mike Arvela</title>
-
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="description"
-      content="Hi! I'm Mike, a software developer from Tampere, Finland."
-    />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={Astro.props.description} />
 
-    <meta name="twitter:site" content="Mike" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Mike Arvela" />
-    <meta
-      name="twitter:description"
-      content="Hi! I'm Mike, a software developer from Tampere, Finland."
-    />
+    <title>{Astro.props.title}</title>
 
-    <meta property="og:site_name" content="Mike" />
-    <meta
-      property="og:image"
-      content="https://avatars.githubusercontent.com/u/299644?v=4?s=400"
-    />
-    <meta property="og:image:alt" content="Mike" />
-    <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Mike Arvela" />
-    <meta
-      property="og:description"
-      content="Hi! I'm Mike, a software developer from Tampere, Finland."
-    />
-
+    <!-- OpenGraph -->
+    <meta name="og:title" content={Astro.props.title} />
+    <meta property="og:title" content={Astro.props.title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en" />
+    <meta property="og:description" content={Astro.props.description} />
+    <meta property="og:site_name" content="Mike Arvela" />
     <meta property="og:url" content="https://mike.fi" />
+    <meta property="og:image" content="https://mike.fi/favicon.png" />
+    <meta property="og:image:alt" content="Mike Arvela" />
+    <meta property="og:description" content="Hi! I'm Mike, a software developer from Tampere, Finland." />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="mike.fi" />
+    <meta name="twitter:title" content={Astro.props.title} />
+    <meta name="twitter:description" content={Astro.props.description} />
 
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="360x360" />

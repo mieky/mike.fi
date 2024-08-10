@@ -1,5 +1,6 @@
 ---
 title: Pay attention, Twitter
+description: A rant from before things really turned out bad for the platform.
 date: "2016-01-06"
 tags:
   - hidden
