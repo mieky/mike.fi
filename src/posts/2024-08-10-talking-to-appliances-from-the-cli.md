@@ -19,7 +19,7 @@ So far I've built three things that work simply by talking to various devices vi
 
 The latest addition is a small shell script that allows me to type `fan on` or `fan off` to toggle the Xiaomi floor fan standing near my desk. The effect is nearly immediate, and I immensely enjoy being able to quickly turn the fan on and off during a Google Meet in the summer heat.
 
-I'm using the fish shell, so I wrote it as a fish function. This is how `fish/functions/fan.fish` looks:
+I'm using the [fish shell](https://fishshell.com/), so I wrote it as a fish function. This is how `fish/functions/fan.fish` looks:
 
 ```fish
 #!/usr/bin/env fish
@@ -45,7 +45,7 @@ end
 
 ### temps
 
-I also have `temps` that prints me an short overview of the [temperature sensors](https://sonoff.tech/product/gateway-and-sensors/snzb-02p/) in our home:
+I also have `temps` that prints me an summary of the [temperature sensors](https://sonoff.tech/product/gateway-and-sensors/snzb-02p/) in our home:
 
 ```sh
 Ilmalämpöpumppu Huonelämpötila: 23.0
@@ -69,9 +69,9 @@ end
 
 ### hue
 
-I have a couple of Hue Play lights and an Hue Iris set up behind and next to my desktop. They talk to Home Assistant via Hue Bridge, which gives me the option to continue using the Hue App, or conveniently toggle scenes via API.
+I have a couple of Hue Play lights and a Hue Iris set up behind and next to my desktop. They talk to Home Assistant via Hue Bridge, which gives me the option to continue using the Hue App, or conveniently toggle scenes via API.
 
-I can list all the available Hue scenes with `hue`,  and pick one with `hue <scene>`. Again, the lights toggle immediately, giving you a perfect sense of being in control.
+I can list all the available Hue scenes with `hue`,  and pick one with `hue <scene>`. Again, all of the around the desktop lights switch their color immediately, giving you a perfect sense of being in control.
 
 ```sh
 $ hue
@@ -97,3 +97,5 @@ The source code for this is in GitHub: <https://github.com/mieky/hue.fish>
 ### What's next?
 
 While it's very satisfying to solve a specific problem by simple shell scripts, I find myself wondering if this could be further generalized or abstracted into a more general-purpose tool. Maybe something like [hass-cli](https://www.home-assistant.io/blog/2019/02/04/introducing-home-assistant-cli/) would already be perfect for this, but I gotta admit, there's something cool about being able to do it with just a couple of standard tools such as curl and jq, while having it exactly the way you'd like.
+
+**Update:** thanks to Mikko for pointing out there's also the [Home Assistant Raycast extension](https://www.raycast.com/tonka3000/homeassistant), which will index available devices and operate them with auto-complete ✌🏻
