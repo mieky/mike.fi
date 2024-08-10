@@ -15,7 +15,7 @@ I've only recently installed [Home Assistant](https://www.home-assistant.io/) to
 
 So far I've built three shell commands that work simply by talking to various devices via the Home Assistant REST API in my local network. It's all about either requesting states for various known devices and then filtering the JSON output, or updating them with a HTTP POST request.
 
-### 1. fan on|off
+### 1: fan on|off
 
 The latest addition is a small shell script that allows me to type `fan on` or `fan off` to toggle the Xiaomi floor fan standing near my desk. The effect is nearly immediate, and I immensely enjoy being able to quickly turn the fan on and off during a Google Meet in the summer heat.
 
