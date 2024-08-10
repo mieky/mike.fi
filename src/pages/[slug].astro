@@ -103,7 +103,7 @@ const { post } = Astro.props
 }
 
 :global(#md .astro-code) {
-  @apply !bg-zinc-80 my-2 overflow-scroll rounded-lg px-4 py-3 !leading-tight;
+  @apply my-2 overflow-scroll rounded-lg px-4 py-3 !leading-tight;
   scrollbar-width: none;
 }
 
@@ -132,12 +132,6 @@ const { post } = Astro.props
 }
 
 :global(#md p > code) {
-  @apply text-sm;
-}
-
-:root {
-  --astro-code-color-background: rgb(246, 246, 246);
-  --astro-code-token-string-expression: rgb(97, 97, 255);
-  --astro-code-token-comment: rgb(157, 157, 157);
+  @apply bg-slate-200 text-sm px-1.5 py-0.5 rounded-md;
 }
 </style>

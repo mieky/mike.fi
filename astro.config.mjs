@@ -7,4 +7,10 @@ import sitemap from "@astrojs/sitemap"
 export default defineConfig({
   site: "https://mike.fi",
   integrations: [tailwind(), mdx(), sitemap()],
+  markdown: {
+    shikiConfig: {
+      // https://shiki.style/themes
+      theme: "tokyo-night",
+    },
+  },
 })
