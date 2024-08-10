@@ -1,6 +1,6 @@
 ---
 title: Talking to appliances from the CLI
-description: There's a certain allure to controlling the physical world on the keyboard!
+description: There's a certain allure to controlling the physical world on the keyboard
 date: "2024-08-10"
 tags:
   - cli
@@ -13,9 +13,9 @@ There's something deeply satisfying about being able to control your physical en
 
 I've only recently installed [Home Assistant](https://www.home-assistant.io/) to set up some basic temperature sensors and smart lights at home. While I can see why people are excited about it, I think I've found myself a use case that excites me even more than the cool dashboards and widgets. Spending a lot of my time on a command line (not to mention my home office), I noticed there's a certain allure to talking to appliances **from the command line**.
 
-So far I've built three things that work simply by talking to various devices via the Home Assistant REST API in my local network. It's all about either requesting states for various known devices and then filtering the JSON output, or updating them with a HTTP POST request.
+So far I've built three shell commands that work simply by talking to various devices via the Home Assistant REST API in my local network. It's all about either requesting states for various known devices and then filtering the JSON output, or updating them with a HTTP POST request.
 
-### fan on|off
+### 1. fan on|off
 
 The latest addition is a small shell script that allows me to type `fan on` or `fan off` to toggle the Xiaomi floor fan standing near my desk. The effect is nearly immediate, and I immensely enjoy being able to quickly turn the fan on and off during a Google Meet in the summer heat.
 
@@ -43,7 +43,7 @@ function fan
 end
 ```
 
-### temps
+### 2: temps
 
 I also have `temps` that prints me an summary of the [temperature sensors](https://sonoff.tech/product/gateway-and-sensors/snzb-02p/) in our home:
 
@@ -67,11 +67,11 @@ function temps
 end
 ```
 
-### hue
+### 3: hue
 
 I have a couple of Hue Play lights and a Hue Iris set up behind and next to my desktop. They talk to Home Assistant via Hue Bridge, which gives me the option to continue using the Hue App, or conveniently toggle scenes via API.
 
-I can list all the available Hue scenes with `hue`,  and pick one with `hue <scene>`. Again, all of the around the desktop lights switch their color immediately, giving you a perfect sense of being in control.
+I can list all the available Hue scenes with `hue`,  and pick one with `hue <scene>`. Again, the lights around the desktop switch color immediately, giving you a perfect sense of being in control.
 
 ```sh
 $ hue
