@@ -1,6 +1,6 @@
 ---
 title: Talking to appliances from the CLI
-description: A coffee-induced spurt of creativity, at least once every few years.
+description: There's a certain allure to controlling the physical world on the keyboard!
 date: "2024-08-10"
 tags:
   - cli
