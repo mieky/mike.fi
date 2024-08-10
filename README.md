@@ -1,5 +1,17 @@
 # mike.fi
 
-Created with Astro. Hosted on GitHub Pages.
+My home page. Created with Astro. Hosted on GitHub Pages.
 
-Massively inspired by [Pilcrow](https://pilcrowonpaper.com/), thank you!
+## Development
+
+```sh
+pnpm dev
+```
+
+## Upgrading Astro version
+
+```sh
+pnpm dlx @astrojs/upgrade
+```
+
+<https://docs.astro.build/en/upgrade-astro/>
