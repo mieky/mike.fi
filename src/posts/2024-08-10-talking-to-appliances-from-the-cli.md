@@ -71,7 +71,7 @@ end
 
 I have a couple of Hue Play lights and a Hue Iris set up behind and next to my desktop. They talk to Home Assistant via Hue Bridge, which gives me the option to continue using the Hue App, or conveniently toggle scenes via API.
 
-I can list all the available Hue scenes with `hue`,  and pick one with `hue <scene>`. Again, the lights around the desktop switch color immediately, giving you a perfect sense of being in control.
+I can list all the available Hue scenes with `hue`, and pick one with `hue <scene>`. Again, the lights around the desktop switch color immediately, giving you a perfect sense of being in control.
 
 ```sh
 $ hue

@@ -7,10 +7,19 @@ import { formatMonth } from "@/utils/format"
 const posts = await getPosts()
 ---
 
-<Layout title="Mike Arvela" description="Hi! I'm Mike, a software developer from Tampere, Finland.">
+<Layout
+  title="Mike Arvela"
+  description="Hi! I'm Mike, a software developer from Tampere, Finland."
+>
   <header>
     <div class="inline-block w-24 py-12">
-      <img class="rounded-full" src="/mike.jpeg" alt="Mike" />
+      <img
+        class="rounded-full"
+        src="/mike.jpeg"
+        alt="Mike"
+        width="96"
+        height="96"
+      />
     </div>
     <div class="flex justify-between">
       <h1 class="text-3xl font-semibold text-slate-700">Hi, I'm Mike!</h1>
