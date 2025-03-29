@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@config "../../tailwind.config.cjs";
+
+a {
+  @apply hover:underline underline underline-offset-2 font-medium hover:text-pink-700;
+}

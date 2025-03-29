@@ -1,4 +1,6 @@
 ---
+import '@/styles/global.css'
+
 interface Props {
   title: string
   description: string
@@ -48,12 +50,6 @@ interface Props {
         Consolas,
         Liberation Mono,
         monospace;
-    }
-  </style>
-  <style lang="postcss">
-    :global(a) {
-      /* Not too shabby? @apply hover:underline underline underline-offset-2 font-medium hover:text-pink-700 text-sky-700; */
-      @apply hover:underline underline underline-offset-2 font-medium hover:text-pink-700;
     }
   </style>
 </html>
