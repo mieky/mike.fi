@@ -3,10 +3,9 @@
   "type": "module",
   "version": "1.0.0",
   "engines": {
-    "node": ">=22.0.0",
-    "pnpm": ">=10.7.0"
+    "node": ">=22.17.1",
+    "pnpm": ">=10.13.1"
   },
-  "packageManager": "pnpm@10.7.0",
   "scripts": {
     "dev": "astro dev",
     "clean": "rm -rf dist",
@@ -32,5 +31,6 @@
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11"
-  }
+  },
+  "packageManager": "pnpm@10.7.0"
 }
