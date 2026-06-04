@@ -1,0 +1,21 @@
+pnpm-workspace.yaml
+  s_7b2a36b9d0bca3::t_dd61e489c1f937 1
+  s_7b2a36b9d0bca3::t_1fd5793a4386e8 2-3
+  s_7b2a36b9d0bca3::t_e77f5a85845ba4 4-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "ff9ceec9e9fe1e3b8a1d431bdff9a8d51f749754",
+  "prompts": {},
+  "sessions": {
+    "s_7b2a36b9d0bca3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e9162-aa54-7181-a05c-1f529782b202",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Mike Arvela <mike@arvela.net>"
+    }
+  }
+}
